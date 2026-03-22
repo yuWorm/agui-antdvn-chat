@@ -1,6 +1,29 @@
 {
   "name": "@yuworm/agui-antdvn-chat",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "description": "Vue 3 AI chat component library with AG-UI streaming support, two-layer architecture (ChatBox + ChatClient), 11 slots, request interceptors, and full TypeScript types.",
+  "author": "yuworm",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "vue3",
+    "chat",
+    "ai",
+    "agui",
+    "ag-ui",
+    "llm",
+    "component",
+    "streaming",
+    "chatbot"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuWorm/agui-antdvn-chat.git"
+  },
+  "homepage": "https://github.com/yuWorm/agui-antdvn-chat#readme",
+  "bugs": {
+    "url": "https://github.com/yuWorm/agui-antdvn-chat/issues"
+  },
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
