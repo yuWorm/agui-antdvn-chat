@@ -1,0 +1,50 @@
+{
+  "name": "@yuworm/agui-antdvn-chat",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./style": "./dist/index.css",
+    "./style.css": "./dist/index.css",
+    "./theme": "./dist/theme/variables.css",
+    "./theme/*": "./dist/theme/*",
+    "./dist/*": "./dist/*"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "scripts": {
+    "build": "vue-tsc -b && vite build",
+    "dev": "vite build --watch"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.0",
+    "markstream-vue": "^0.0.10-beta.1",
+    "@ag-ui/client": "^0.0.47",
+    "@ag-ui/core": "^0.0.47"
+  },
+  "peerDependenciesMeta": {
+    "@ag-ui/client": { "optional": true },
+    "@ag-ui/core": { "optional": true }
+  },
+  "devDependencies": {
+    "@ag-ui/client": "^0.0.47",
+    "@ag-ui/core": "^0.0.47",
+    "@vitejs/plugin-vue": "^6.0.5",
+    "markstream-vue": "^0.0.10-beta.1",
+    "typescript": "~5.9.3",
+    "vite": "^8.0.1",
+    "vite-plugin-dts": "^4.5.4",
+    "vue": "^3.5.30",
+    "vue-tsc": "^3.2.5"
+  }
+}
